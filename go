@@ -1,8 +1,6 @@
 wget -qO- http://ipecho.net/plain >> ip
-ipadd=`cat ip|awk -F\. '{print $1"."$2"."$3}'`
+ipadd=`cat ip`
 sed -i 's#tihuan#'$ipadd'#g' config.yaml
-mkdir -p /root/.local/share/storj/storagenode
-cp config.yaml /root/.local/share/storj/storagenode
 cp storagenode-updater.service /etc/systemd/system
 cp storagenode.service /etc/systemd/system
 apt update
@@ -12,6 +10,9 @@ wget https://github.com/storj/storj/releases/download/v1.53.1/storagenode_linux_
 wget https://github.com/storj/storj/releases/download/v1.53.1/storagenode-updater_linux_amd64.zip
 unzip storagenode_linux_amd64.zip
 unzip storagenode-updater_linux_amd64.zip
+./storagenode setup
+cd /root/storj
+cp config.yaml /root/.local/share/storj/storagenode
 service storagenode start
 service storagenode-updater start
 systemctl enable storagenode
