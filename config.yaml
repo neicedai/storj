@@ -110,7 +110,7 @@ log.level: info
 operator.email: "6916892@qq.com"
 
 # operator wallet address
-operator.wallet: "0xebfec2ff0e7069134adac76c996c71567b639d8a"
+operator.wallet: "0xafe0753192d290d1385eefb29f4d9f52156f95b9"
 
 # operator wallet features
 operator.wallet-features: ""
