@@ -8,7 +8,7 @@
 # color: false
 
 # server address of the api gateway and frontend app
-console.address: 170.39.215.231:14002
+console.address: tihuan:14002
 
 # path to static resources
 # console.static-dir: ""
@@ -107,7 +107,7 @@ log.level: info
 # nodestats.storage-sync: 12h0m0s
 
 # operator email address
-operator.email: "12747677@qq.com"
+operator.email: "6916892@qq.com"
 
 # operator wallet address
 operator.wallet: "0xebfec2ff0e7069134adac76c996c71567b639d8a"
@@ -137,7 +137,7 @@ operator.wallet-features: ""
 # retain.status: enabled
 
 # public address to listen on
-server.address: 170.39.215.231:28967
+server.address: tihuan:28967
 
 # if true, client leaves may contain the most recent certificate revocation for the current certificate
 # server.extensions.revocation: true
@@ -164,7 +164,7 @@ server.private-address: 127.0.0.1:7778
 storage.allocated-bandwidth: 0 B
 
 # total allocated disk space in bytes
-storage.allocated-disk-space: 1.00 TB
+storage.allocated-disk-space: 2.00 TB
 
 # how frequently Kademlia bucket should be refreshed with node stats
 # storage.k-bucket-refresh-interval: 1h0m0s
