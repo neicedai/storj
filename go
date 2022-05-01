@@ -3,6 +3,7 @@ ipadd=`cat ip`
 sed -i 's#tihuan#'$ipadd'#g' config.yaml
 cp storagenode-updater.service /etc/systemd/system
 cp storagenode.service /etc/systemd/system
+chmod 777 update
 cp update /usr/local/bin
 apt update
 apt install unzip -y
