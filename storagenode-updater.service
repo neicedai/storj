@@ -4,7 +4,7 @@ Description=storagenode
 [Service]
 User=root
 #Environment=BTFS_PATH=/btfs/btfsl/.btfs
-ExecStart=/usr/local/bin/storagenode-updater run
+ExecStart=updater
 #KillSignal=SIGINT # gracefully kill the process when stopping the service. Allows node to unregister cleanly.
 Restart=always
 RestartSec=10
