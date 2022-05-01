@@ -8,7 +8,7 @@
 # color: false
 
 # server address of the api gateway and frontend app
-console.address: tihuan:14002
+console.address: tihuan:44002
 
 # path to static resources
 # console.static-dir: ""
@@ -152,7 +152,7 @@ server.address: tihuan:28967
 # server.peer-id-versions: latest
 
 # private address to listen on
-server.private-address: 127.0.0.1:7778
+server.private-address: 127.0.0.1:47778
 
 # url for revocation database (e.g. bolt://some.db OR redis://127.0.0.1:6378?db=2&password=abc123)
 # server.revocation-dburl: bolt:///root/.local/share/storj/storagenode/revocations.db
