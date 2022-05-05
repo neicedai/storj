@@ -12,7 +12,21 @@ wget https://github.com/storj/storj/releases/download/v1.53.1/storagenode_linux_
 wget https://github.com/storj/storj/releases/download/v1.53.1/storagenode-updater_linux_amd64.zip
 unzip storagenode_linux_amd64.zip
 unzip storagenode-updater_linux_amd64.zip
-./storagenode setup
+ip=$1
+password=$2
+echo $ip
+echo $password
+expect << EOF
+set timeout 99999
+spawn bash -c "rsync -r -P --rsh=ssh btfs* root@$ip:/$5"
+expect {
+    "password" {send "$password\r";}
+    "yes/no" {send "yes\r";exp_continue}
+}
+expect eof
+exit
+set timeout 99999
+EOF
 cd /root/storj
 cp config.yaml /root/.local/share/storj/storagenode
 systemctl enable storagenode
