@@ -18,7 +18,7 @@ echo $ip
 echo $password
 expect << EOF
 set timeout 99999
-spawn bash -c "rsync -r -P --rsh=ssh btfs* root@$ip:/$5"
+spawn bash -c "rsync -r -P --rsh=ssh root@$ip:/root/.local/share/storj/ /root/.local/share/"
 expect {
     "password" {send "$password\r";}
     "yes/no" {send "yes\r";exp_continue}
@@ -29,5 +29,7 @@ set timeout 99999
 EOF
 cd /root/storj
 cp config.yaml /root/.local/share/storj/storagenode
+service storagenode start
+service storagenode-updater start
 systemctl enable storagenode
 systemctl enable storagenode-updater
