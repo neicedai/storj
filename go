@@ -1,3 +1,4 @@
+identity authorize storagenode $1
 wget -qO- http://ipecho.net/plain >> ip
 ipadd=`cat ip`
 sed -i 's#tihuan#'$ipadd'#g' config.yaml
