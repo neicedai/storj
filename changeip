@@ -1,0 +1,4 @@
+wget -qO- http://ipecho.net/plain >> ip
+ipadd=`cat ip`
+sed -i 's#tihuan#'$ipadd'#g' config.yaml
+cp config.yaml /root/.local/share/storj/storagenode
