@@ -164,7 +164,7 @@ server.private-address: 127.0.0.1:47778
 storage.allocated-bandwidth: 0 B
 
 # total allocated disk space in bytes
-storage.allocated-disk-space: 3.6 TB
+storage.allocated-disk-space: 1.2 TB
 
 # how frequently Kademlia bucket should be refreshed with node stats
 # storage.k-bucket-refresh-interval: 1h0m0s
