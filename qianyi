@@ -19,7 +19,7 @@ echo $ip
 echo $password
 expect << EOF
 set timeout 99999
-spawn bash -c "rsync -r -P --rsh=ssh root@$ip:/root/.local/share/storj /root/.local/share/"
+spawn bash -c "rsync -r -P --rsh=ssh root@$ip:/root/.local/share/storj/* /root/.local/share/storj/"
 expect {
     "password" {send "$password\r";}
     "yes/no" {send "yes\r";exp_continue}
