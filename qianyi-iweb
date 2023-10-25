@@ -14,6 +14,6 @@ wget https://github.com/storj/storj/releases/download/v1.90.1/storagenode_linux_
 wget https://github.com/storj/storj/releases/download/v1.90.1/storagenode-updater_linux_amd64.zip
 unzip storagenode_linux_amd64.zip
 unzip storagenode-updater_linux_amd64.zip
-ip=$1
+#ip=$1
 cd /root/storj
 cp config.yaml /root/.local/share/storj/storagenode
