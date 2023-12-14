@@ -1,0 +1,2 @@
+cd /usr/local/bin
+./storagenode dashboard --address 127.0.0.1:47778
