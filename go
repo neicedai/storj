@@ -1,3 +1,8 @@
+chmod 777 dash1
+cp dash1 /usr/local/bin
+chmod +x identity
+sudo mv identity /usr/local/bin/identity
+identity create storagenode
 identity authorize storagenode $1
 wget -qO- http://ipecho.net/plain >> ip
 ipadd=`cat ip`
