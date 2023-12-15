@@ -1,3 +1,5 @@
+apt update
+apt install unzip -y
 chmod 777 dash1
 cp dash1 /usr/local/bin
 chmod +x identity
@@ -11,8 +13,6 @@ cp storagenode-updater.service /etc/systemd/system
 cp storagenode.service /etc/systemd/system
 chmod 777 update
 cp update /usr/local/bin
-apt update
-apt install unzip -y
 cd /usr/local/bin
 wget https://github.com/storj/storj/releases/download/v1.90.2/storagenode_linux_amd64.zip
 wget https://github.com/storj/storj/releases/download/v1.90.2/storagenode-updater_linux_amd64.zip
