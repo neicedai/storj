@@ -14,8 +14,8 @@ cp storagenode.service /etc/systemd/system
 chmod 777 update
 cp update /usr/local/bin
 cd /usr/local/bin
-wget https://github.com/storj/storj/releases/download/v1.90.2/storagenode_linux_amd64.zip
-wget https://github.com/storj/storj/releases/download/v1.90.2/storagenode-updater_linux_amd64.zip
+wget https://github.com/storj/storj/releases/download/v1.108.1/storagenode_linux_amd64.zip
+wget https://github.com/storj/storj/releases/download/v1.108.1/storagenode-updater_linux_amd64.zip
 unzip storagenode_linux_amd64.zip
 unzip storagenode-updater_linux_amd64.zip
 ./storagenode setup
